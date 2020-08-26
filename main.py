@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
+from src.backend import Backend
+from src.config import Config
 
 
 def main():
-    print("hello")
+    backend = Backend()
 
 
 if __name__ == "__main__":
