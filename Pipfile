@@ -9,6 +9,7 @@ verify_ssl = true
 pytest = "*"
 pytest-sugar = "*"
 requests = "*"
+pytest-mock = "*"
 
 [requires]
 python_version = "3.7"

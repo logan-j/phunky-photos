@@ -3,9 +3,8 @@ import json
 
 class Album(object):
     def __init__(self, data):
-        obj = json.loads(data)
-        self.__dict__ = obj
+        self.__dict__ = data
 
-        self.userId = obj.get("userId")
-        self.id = obj.get("id")
-        self.title = obj.get("title")
+        self.userId = data.get("userId")
+        self.id = data.get("id")
+        self.title = data.get("title")

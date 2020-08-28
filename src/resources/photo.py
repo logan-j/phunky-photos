@@ -3,11 +3,10 @@ import json
 
 class Photo(object):
     def __init__(self, data):
-        obj = json.loads(data)
-        self.__dict__ = obj
+        self.__dict__ = data
 
-        self.albumId = obj.get("albumId")
-        self.id = obj.get("id")
-        self.title = obj.get("title")
-        self.url = obj.get("url")
-        self.thumbnailUrl = obj.get("thumbnailUrl")
+        self.albumId = data.get("albumId")
+        self.id = data.get("id")
+        self.title = data.get("title")
+        self.url = data.get("url")
+        self.thumbnailUrl = data.get("thumbnailUrl")
