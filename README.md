@@ -11,7 +11,8 @@ After cloning this repo, to initialize and install dependencies, run: `pipenv in
 
 ### Running the Application
 
-To execute the application, run: `pipenv run ./main.py`
+To execute the application, run: `pipenv run ./main.py [album_id]`
+Replacing `[album_id]` with the album that you want to display.
 
 ### Running Tests
 
