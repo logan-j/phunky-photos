@@ -9,8 +9,8 @@ class Backend:
         self.config = Config()
         api = self.config.api_url()
 
-        self.photos_url = "{}/photos".format(api)
-        self.albums_url = "{}/albums".format(api)
+        self.photos_url = "{base_url}/photos".format(base_url=api)
+        self.albums_url = "{base_url}/albums".format(base_url=api)
 
     def __parse_albums(self, raw_response):
         return [Album(r) for r in raw_response]
