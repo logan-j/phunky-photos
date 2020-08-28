@@ -14,6 +14,8 @@ After cloning this repo, to initialize and install dependencies, from the root d
 To execute the application, from the root directory run: `pipenv run ./main.py [album_id]`
 Replacing `[album_id]` with the album that you want to display.
 
+For more help on running the program, from the root directory run: `pipenv run ./main.py -h`
+
 ### Running Tests
 
 To execute the tests, from the root directory run: `pipenv run pytest`
